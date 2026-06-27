@@ -16,6 +16,8 @@ The HPDL architecture integrates three core components running in **two parallel
 1. **1D CNN** — extracts local temporal patterns from the input sequence
 2. **LSTM / BiLSTM** — models long-term sequential dependencies
 3. **Attention mechanism** — dynamically weighs the most relevant timesteps
+<img width="8000" height="4500" alt="PARALLEL CNN BI LSTM" src="https://github.com/user-attachments/assets/ee7a5963-152d-46ed-a6c9-6c19647b7ca7" />
+
 
 The context vectors from both parallel branches are concatenated and passed through fully connected layers to produce the final prediction.
 
@@ -27,6 +29,8 @@ The context vectors from both parallel branches are concatenated and passed thro
 - **Period:** December 31, 2019 – May 29, 2024 (1,100 observations)
 - **Features:** Date, Open, High, Low, Close, Adjusted Close, Volume
 - **Split:** 90% training / 10% testing (training set further split for validation)
+<img width="1489" height="790" alt="oracle_closing_prices" src="https://github.com/user-attachments/assets/133748bf-7e6e-4f88-b59a-79d6456126ae" />
+
 
 ## Key Results
 Models were grouped into three categories: **baseline** (LSTM, BiLSTM, CNN-LSTM, CNN-BiLSTM), **attention-augmented** baselines, and **parallel attention-based ensembles**. Evaluation metrics: RMSE, MSE, MAE, MAPE, R².
@@ -37,6 +41,8 @@ Models were grouped into three categories: **baseline** (LSTM, BiLSTM, CNN-LSTM,
 | CNN-BiLSTM | 7 days | 1.40285 | 1.561 | 0.91491 |
 | CNN-BiLSTM-Attention | 14 days | 1.34355 | 1.149 | 0.92171 |
 | **Parallel CNN-BiLSTM-Attention** | **7 days** | **1.23966** | **1.061** | **0.93962** |
+<img width="6342" height="4305" alt="PARALLEL MODELS ATTENTION CHART" src="https://github.com/user-attachments/assets/92d7bd28-b318-4af0-b841-bec290be8041" />
+
 
 The **Parallel CNN-BiLSTM-Attention** model achieved the best overall performance, confirming that combining hybrid feature extraction, bidirectional temporal modeling, attention, and parallel ensembling yields the most accurate and stable forecasts.
 
