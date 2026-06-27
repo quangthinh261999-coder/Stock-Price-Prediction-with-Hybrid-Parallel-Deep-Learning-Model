@@ -6,7 +6,7 @@ This repository contains the partial implementation accompanying our work on sto
 
 ## Authors
 - **Nguyen Quang Thinh** — Faculty of Engineering Technology, Yersin University, Da Lat City, Vietnam (quangthinh261999@gmail.com)
-- **Nguyen Kim Quoc** — Faculty of Information Technology, Nguyen Tat Thanh University, Ho Chi Minh City, Vietnam (nkquoc@ntt.edu.tw)
+- **Nguyen Kim Quoc** — Faculty of Information Technology, Nguyen Tat Thanh University, Ho Chi Minh City, Vietnam
 
 ## Abstract
 Deep learning architectures have outperformed conventional methods in time series analysis. This study explores a parallel combination of deep learning models incorporating attention mechanisms for stock price prediction, focusing on Oracle Corporation (ORCL) stock. The proposed model, called the **Hybrid Parallel Deep Learning (HPDL)** model, learns diverse knowledge from parallel component branches combined through an attention-based fusion strategy, achieving superior results compared to single deep learning models. Using Oracle's historical stock price data from 2020 to 2024, the paper compares the predictive performance of various architectures (LSTM, BiLSTM, CNN-LSTM, CNN-BiLSTM, their attention-augmented variants, and parallel attention-based ensembles), analyzing the effects of hyperparameters and optimization techniques. Results demonstrate that hybrid and parallel models accurately capture complex temporal patterns and outperform baselines from prior research.
